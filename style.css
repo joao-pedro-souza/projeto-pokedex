@@ -14,7 +14,11 @@ body {
 }
 
 main {
-    background-color: red;
     display: inline-block;
     margin-top: 2%;
+    padding: 15px;
+}
+
+.pokedex {
+    width: 100%;
 }

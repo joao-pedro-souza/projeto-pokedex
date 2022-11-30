@@ -30,4 +30,5 @@ main {
     bottom: 55%;
     left: 50%;
     transform: translate(-63%, 20%);
+    height: 18%;
 }

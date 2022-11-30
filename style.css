@@ -46,3 +46,11 @@ main {
     color: #3a444d;
     text-transform: capitalize;
 }
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+

@@ -5,6 +5,9 @@ const form = document.querySelector('.form');
 const input = document.querySelector('.input_search');
 
 const fetchPokemon = async (pokemon) => {
+    pokemonName.innerHTML = 'Loading...'
+    pokemonNumber.innerHTML = ''
+
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     
     if (APIResponse.status == 200) {
@@ -14,6 +17,7 @@ const fetchPokemon = async (pokemon) => {
 
     else {
         pokemonName.innerHTML = 'MissingNo'
+        pokemonNumber.innerHTML = 'NaN'
         pokemonImage.src = 'imagens/missingno.png'
     }
 }

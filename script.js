@@ -13,6 +13,7 @@ const renderPokemon = async (pokemon) => {
     const data = await fetchPokemon(pokemon);
     pokemonName.innerHTML = data.name;
     pokemonNumber.innerHTML = data.id;
+    pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
 }
 
-renderPokemon('6')
+renderPokemon('478')

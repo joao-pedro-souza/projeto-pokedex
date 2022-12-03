@@ -4,4 +4,9 @@ const fetchPokemon = async (pokemon) => {
     return data;
 }
 
-fetchPokemon();
+const renderPokemon = async (pokemon) => {
+
+    const data = await fetchPokemon(pokemon);
+
+    
+}
